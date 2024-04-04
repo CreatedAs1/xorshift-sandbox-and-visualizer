@@ -19,7 +19,9 @@ namespace Random {
      * Generates a number using XORSHIFT
      */
     //% block
-    export function xorshift() {
+    export function xorshift(seed1: number, seed2: number): number {
+        state0 = seed1;
+        state1 = seed2
         let s1 = state0; 
         let s0 = state1; 
         state0 = s0;  
