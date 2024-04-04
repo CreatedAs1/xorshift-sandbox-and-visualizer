@@ -1,8 +1,8 @@
 /**
  * Microsoft MakeCode port of Lordpoint's xorshift algorithim.
  */
-let state0 = 1; // SEED - change these to affect the apparent randomness of the outcome
-let state1 = 2; // SEED - change these to affect the apparent randomness of the outcome
+let state0 = 12; // SEED - change these to affect the apparent randomness of the outcome
+let state1 = 23; // SEED - change these to affect the apparent randomness of the outcome
 /**
  * Different initial seed values will dramatically affect the outcome. The default values, 1 & 2
  * for state0 and state1 respectively, will produce a pattern in the visualizer.
