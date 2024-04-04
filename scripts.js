@@ -1,12 +1,3 @@
-const canvas = document.getElementById('canvas');
-const context = canvas.getContext('2d');
-const height = 500;
-const width = 800;
-
-canvas.height = height;
-canvas.width = width;
-
-let y = 0;
 let state0 = 1; // SEED - change these to affect the apparent randomness of the outcome
 let state1 = 2; // SEED - change these to affect the apparent randomness of the outcome
 
@@ -14,18 +5,6 @@ let state1 = 2; // SEED - change these to affect the apparent randomness of the 
 // for state0 and state1 respectively, will produce a pattern in the visualizer.
 // A pattern becomes visible when the algorithm starts to repeat itself. If you use 12 & 23, 
 // in contrast, there is no perceptible pattern.
-
-function draw() {
-    for (let x = 0; x < width; x++) {
-        if (xorshift() % 2 == 0) {
-            context.fillRect(x, y, 1, 1);
-        }
-    }
-    y++;
-    if (y < height) {
-        requestAnimationFrame(draw())
-    }
-}
 
 function xorshift() {
     let s1 = state0; 
@@ -45,9 +24,3 @@ function xorshift() {
    return state0 + state1;
    
 }
-
-
-
-                                      
-
-
