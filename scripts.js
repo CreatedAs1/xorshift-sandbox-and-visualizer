@@ -1,5 +1,6 @@
 /**
  * Microsoft MakeCode port of Lordpoint's xorshift algorithim.
+ * Can be found at https://github.com/CreatedAs1/xorshift-sandbox-and-visualizer/master
  */
 let state0 = 12; // SEED - change these to affect the apparent randomness of the outcome
 let state1 = 23; // SEED - change these to affect the apparent randomness of the outcome
